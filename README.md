@@ -42,3 +42,15 @@ cmake -DPICO_BOARD=pico2_w -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 cd ..
 ln -sf build/compile_commands.json compile_commands.json
 ```
+## Setting Up OpenOCD (debug support)
+
+Clone the OpenOCD repository
+```bash
+git clone https://github.com/raspberrypi/openocd.git
+cd openocd
+./bootstrap
+./configure
+make
+sudo make install
+```
+
